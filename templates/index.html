@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UI Assignment</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #fff;
+            background-color: #888;
+            padding: 10px;
+        }
+
+        .groups {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .group-heading {
+            flex: 1;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .dropdown {
+            margin-top: 10px;
+            text-align: center;
+            height: 40px;
+            width: 200px;
+        }
+
+        .scroll-menu {
+            margin-top: 10px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .output-box {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .output-label {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>UI-Assignment</h1>
+        <div class="groups">
+            <div class="group">
+                <h2 class="group-heading">Group A</h2>
+                <div class="dropdown">
+                    <select>
+                        <option value="A1">A1</option>
+                        <option value="A2">A2</option>
+                        <option value="A3">A3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="group">
+                <h2 class="group-heading">Group B</h2>
+                <div class="dropdown">
+                    <select>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="B3">B3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="group">
+                <h2 class="group-heading">Group C</h2>
+                <div class="scroll-menu">
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3 class="output-label">Output:</h3>
+        <div class="output-box">
+
+            <div id="output"></div>
+        </div>
+    </div>
+</body>
+</html>
